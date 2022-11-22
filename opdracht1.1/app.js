@@ -7,3 +7,8 @@ paragraaf.innerText = shop
 
 // paragraaf.innerText = Bonen;
 
+console.log("3, Bonen staan op de vierde plek van uw winkelmand");
+
+function product_toevoegen()
+
+
