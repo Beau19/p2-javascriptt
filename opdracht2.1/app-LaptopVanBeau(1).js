@@ -1,0 +1,1 @@
+let paragraaf = document.getElementById("para");
