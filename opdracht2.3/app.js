@@ -1,20 +1,32 @@
 let block = document.getElementById("div");
 let position = 0;
-function move() {
-    if (position >= window.innerWidth) {
-        position = 0;
-    } else {
-      position += 50;
-      block.style.left = position + "px";
-    }
+let vertical = 0;
+
+window.addEventListener("keydown", function(event){
+
+
+
+if(event.key == "w") {
+    vertical = vertical - 50;
+    block.style.top = vertical + "px";
 }
 
-setInterval(move, 1000);
+if(event.key == "a") {
+    position = position - 50;
+    block.style.left = position + "px";
+}
 
-let colors = ["yellow", "green", "purple", "pink", "turquoise"];
+if(event.key == "s") {
+    vertical = vertical + 50;
+    block.style.top = vertical + "px";
+}
 
-block.addEventListener("click", function () {
-      let random_color = Math.floor(Math.random() * 5) ;
+if(event.key == "d") {
+    position = position + 50;
+    block.style.left = position + "px";
+}
 
-      block.style.backgroundColor = colors[random_color];
-});
+
+})
+
+    
