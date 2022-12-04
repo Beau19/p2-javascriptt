@@ -42,7 +42,7 @@ mainMenu.addEventListener("click", () => {
 
 const displayReactionTime = (rt) => {
   clickableArea.style.backgroundColor = "#faf0ca";
-  message.innerHTML = `<div class='reaction-time-text'>${rt} ms</div>Click to continue.`;
+  message.innerHTML = `<div class='reaction-time-text'>${rt} ms</div>Klik om verder te gaan.`;
   greenDisplayed = false;
   waitingForStart = true;
 }
